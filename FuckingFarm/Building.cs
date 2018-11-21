@@ -11,6 +11,6 @@ namespace FuckingFarm
         public string BuildingName { get; set; }
         public double BuildingSquare { get; set; }
         public int BuildingAnimalsQuantity { get; set; }
-        public List<Animal> Animals { get; set; }
+        public List <Animal> Animals { get; set; }
     }
 }

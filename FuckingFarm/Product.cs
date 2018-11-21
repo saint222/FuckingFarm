@@ -9,6 +9,8 @@ namespace FuckingFarm
     public class Product
     {
         public string ProductName { get; set; }
-        public double ProductWeight {get; set; }
+        public double ProductWeight { get; set; }
+
     }
+
 }
