@@ -24,9 +24,9 @@ namespace FuckingFarm
             Building aHenhous = new Building() { BuildingName = "A pigsty", BuildingSquare = 20, BuildingAnimalsQuantity = 10, Animals = new List <Animal> ()}; 
             aHenhous.Animals.Add(aHen);
 
-            Plant potato = new Plant() { PlantName = "Potato", PlantSeasonOfPlanting = "Spring", PlantSeasonOfHarvesting = "Autumn", PlantSquareAtTheGardenbed = 30};
-            Plant cucubbers = new Plant() { PlantName = "A cucumber", PlantSeasonOfPlanting = "Spring", PlantSeasonOfHarvesting = "Summer", PlantSquareAtTheGardenbed = 20};
-            Plant garlic = new Plant() { PlantName = "Garlic", PlantSeasonOfPlanting = "Winter", PlantSeasonOfHarvesting = "Summer", PlantSquareAtTheGardenbed = 10};
+            Plant potato = new Plant() { PlantName = "potato", PlantSeasonOfPlanting = "Spring", PlantSeasonOfHarvesting = "Autumn", PlantSquareAtTheGardenbed = 30};
+            Plant cucubbers = new Plant() { PlantName = "cucumber", PlantSeasonOfPlanting = "Spring", PlantSeasonOfHarvesting = "Summer", PlantSquareAtTheGardenbed = 20};
+            Plant garlic = new Plant() { PlantName = "garlic", PlantSeasonOfPlanting = "Winter", PlantSeasonOfHarvesting = "Summer", PlantSquareAtTheGardenbed = 10};
 
             Gardenbed gardenbedPotato = new Gardenbed() {GardenbedSquare = 30, Plants = new List <Plant> () };
             Gardenbed gardenbedCucumbers = new Gardenbed() {GardenbedSquare = 20, Plants = new List <Plant> () };
@@ -42,9 +42,13 @@ namespace FuckingFarm
             myFarm.Buildings.Add(aCowshed);
             myFarm.Buildings.Add(aHenhous);
 
+            myFarm.AboutNameAndSquare();
+            myFarm.AboutGardenbeds();
+
             Console.ReadLine();
 
 
         }
+        
     }
 }
