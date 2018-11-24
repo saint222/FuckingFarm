@@ -20,38 +20,45 @@ namespace FuckingFarm
 
         public void AboutGardenbeds()
         {
-            Console.WriteLine("The Gardenbeds");
+            
             for (int i = 0; i < Gardenbeds.Count; i++)
                 for (int j = 0; j < Gardenbeds[i].Plants.Count; j++)
                 {
                     Console.WriteLine("The list of the plants at the gardenbeds includes:");
                     Console.WriteLine($"A {Gardenbeds[i].Plants[j].PlantName} gardenbed;");
                     Console.WriteLine($"It's season of planting is {Gardenbeds[i].Plants[j].PlantSeasonOfPlanting};");
-                    Console.WriteLine($"It's season of harvesting is {Gardenbeds[i].Plants[j].PlantSeasonOfHarvesting};");                    
+                    Console.WriteLine($"It's season of harvesting is {Gardenbeds[i].Plants[j].PlantSeasonOfHarvesting};");
                     Console.WriteLine($"It's square at the gardenbed is {Gardenbeds[i].Plants[j].PlantSquareAtTheGardenbed} sq.m.;");
                 }
 
         }
         public void AboutBuildings()
         {
-            
             for (int i = 0; i < Buildings.Count; i++)
                 for (int j = 0; j < Buildings[i].Animals.Count; j++)
-                {                   
-                    
+                {
+
                     Console.WriteLine($"The list of the animals at the farm includes {Buildings[i].Animals[j].AnimalName};");
-                    Console.WriteLine($"The product they produce is {Buildings[i].Animals[j].Products};");
-                    Console.WriteLine($"They live in a {Buildings[i].BuildingName};");
-                    
+                    Console.WriteLine($"The product they produce is {Buildings[i].Animals[j].Products.ProductName};");
+                    Console.WriteLine($"The product's weight is {Buildings[i].Animals[j].Products.ProductWeight};");
+                    Console.WriteLine($"They live in a {Buildings[i].BuildingName};");                    
                     Console.WriteLine($"There are {Buildings[i].BuildingAnimalsQuantity} of them in a building;");
-                    Console.WriteLine($"The square of each building is {Buildings[i].BuildingSquare} sq.m.;");                    
-
+                    Console.WriteLine($"The square of each building is {Buildings[i].BuildingSquare} sq.m.;");
                 }
-
-            Console.ReadLine();
+            
+        }
+        public void GardenbedsCount()
+        {
+            int gardenbedsCount = Gardenbeds.Count;
+            Console.WriteLine($"There are {gardenbedsCount} gardenbeds at the farm;");            
         }
 
-
+        public void BuildingsCount()
+        {
+            int buildingsCount = Buildings.Count;
+            Console.WriteLine($"There are {buildingsCount} buildings at the farm;");
+        }
+       
     }
-
+    
 }

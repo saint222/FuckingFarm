@@ -11,7 +11,7 @@ namespace FuckingFarm
        public static void Main(string[] args)
         {
             Product milk = new Product() { ProductName = "milk", ProductWeight = 10};
-            Product anEgg = new Product() { ProductName = "An egg", ProductWeight = 20 };
+            Product anEgg = new Product() { ProductName = "eggs", ProductWeight = 20 };
             Product meat = new Product() { ProductName = "meat", ProductWeight = 30 };
             
             Animal aCow = new Animal () {AnimalName = "cows", Products = milk };
@@ -43,8 +43,11 @@ namespace FuckingFarm
             myFarm.Buildings.Add(aHenhous);
 
             myFarm.AboutNameAndSquare();
+            myFarm.BuildingsCount();
+            myFarm.GardenbedsCount();
             myFarm.AboutGardenbeds();
             myFarm.AboutBuildings();
+            
 
             Console.ReadLine();
 
