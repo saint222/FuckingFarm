@@ -12,5 +12,13 @@ namespace FuckingFarm
         public double BuildingSquare { get; set; }
         public int BuildingAnimalsQuantity { get; set; }
         public List <Animal> Animals { get; set; }
+
+
+
+        //public void AnimalsCount()
+        //{
+        //    int animalsCount = Animals.Count;
+        //    Console.WriteLine($"There are {animalsCount} buildings at the farm;");
+        //}
     }
 }

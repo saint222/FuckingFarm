@@ -21,7 +21,7 @@ namespace FuckingFarm
             Building aCowshed = new Building() { BuildingName = "cowshed", BuildingSquare = 30, BuildingAnimalsQuantity = 20, Animals = new List <Animal>() };
             aCowshed.Animals.Add(aCow);
             aCowshed.Animals.Add(aPig);
-            Building aHenhous = new Building() { BuildingName = "pigsty", BuildingSquare = 20, BuildingAnimalsQuantity = 10, Animals = new List <Animal> ()}; 
+            Building aHenhous = new Building() { BuildingName = "pigsty", BuildingSquare = 20, BuildingAnimalsQuantity = 15, Animals = new List <Animal> ()}; 
             aHenhous.Animals.Add(aHen);
 
             Plant potato = new Plant() { PlantName = "potato", PlantSeasonOfPlanting = "spring", PlantSeasonOfHarvesting = "autumn", PlantSquareAtTheGardenbed = 25};
@@ -46,9 +46,11 @@ namespace FuckingFarm
             myFarm.BuildingsCount();
             myFarm.GardenbedsCount();
             myFarm.AboutGardenbeds();
+            myFarm.PercentOfFullnessGardenbeds();
             myFarm.AboutBuildings();
+            myFarm.PercentOfFullnessBuildings();
+            
 
-            myFarm.PercentOfFullness();
 
             Console.ReadLine();
 

@@ -60,7 +60,7 @@ namespace FuckingFarm
         }
 
         
-        public void PercentOfFullness()
+        public void PercentOfFullnessGardenbeds()
         {
             Console.WriteLine("кот!=код:)");
             double percentOfFullness = Gardenbeds[0].Plants[0].PlantSquareAtTheGardenbed * 100 / Gardenbeds[0].GardenbedSquare;
@@ -69,6 +69,15 @@ namespace FuckingFarm
             Console.WriteLine($"The cucumber gardenbed percent of fullness is {percentOfFullness_1} %;");
             double percentOfFullness_2 = Gardenbeds[2].Plants[0].PlantSquareAtTheGardenbed * 100 / Gardenbeds[2].GardenbedSquare;
             Console.WriteLine($"The garlic gardenbed percent of fullness is {percentOfFullness_2} %;");
+            Console.WriteLine("код!=кот:)");
+        }
+
+        public void PercentOfFullnessBuildings ()
+        {
+            int animalsCount = Buildings[0].Animals.Count * 100 / Buildings [0].BuildingAnimalsQuantity;
+            Console.WriteLine($"The cowshed percent of fullness is {animalsCount} %;");
+            int animalsCount_1 = Buildings[1].Animals.Count * 100 / Buildings[1].BuildingAnimalsQuantity;
+            Console.WriteLine($"The henhous percent of fullness is {animalsCount_1} %;");
         }
 
     }

@@ -10,5 +10,6 @@ namespace FuckingFarm
     {
         public string AnimalName { get; set; }
         public Product Products {get; set;}
+
     }
 }
