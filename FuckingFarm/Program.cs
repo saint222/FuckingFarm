@@ -24,9 +24,9 @@ namespace FuckingFarm
             Building aHenhous = new Building() { BuildingName = "pigsty", BuildingSquare = 20, BuildingAnimalsQuantity = 10, Animals = new List <Animal> ()}; 
             aHenhous.Animals.Add(aHen);
 
-            Plant potato = new Plant() { PlantName = "potato", PlantSeasonOfPlanting = "spring", PlantSeasonOfHarvesting = "autumn", PlantSquareAtTheGardenbed = 30};
-            Plant cucubbers = new Plant() { PlantName = "cucumber", PlantSeasonOfPlanting = "spring", PlantSeasonOfHarvesting = "summer", PlantSquareAtTheGardenbed = 20};
-            Plant garlic = new Plant() { PlantName = "garlic", PlantSeasonOfPlanting = "winter", PlantSeasonOfHarvesting = "summer", PlantSquareAtTheGardenbed = 10};
+            Plant potato = new Plant() { PlantName = "potato", PlantSeasonOfPlanting = "spring", PlantSeasonOfHarvesting = "autumn", PlantSquareAtTheGardenbed = 25};
+            Plant cucubbers = new Plant() { PlantName = "cucumber", PlantSeasonOfPlanting = "spring", PlantSeasonOfHarvesting = "summer", PlantSquareAtTheGardenbed = 15};
+            Plant garlic = new Plant() { PlantName = "garlic", PlantSeasonOfPlanting = "winter", PlantSeasonOfHarvesting = "summer", PlantSquareAtTheGardenbed = 5};
 
             Gardenbed gardenbedPotato = new Gardenbed() {GardenbedSquare = 30, Plants = new List <Plant> () };
             Gardenbed gardenbedCucumbers = new Gardenbed() {GardenbedSquare = 20, Plants = new List <Plant> () };
@@ -47,7 +47,8 @@ namespace FuckingFarm
             myFarm.GardenbedsCount();
             myFarm.AboutGardenbeds();
             myFarm.AboutBuildings();
-            
+
+            myFarm.PercentOfFullness();
 
             Console.ReadLine();
 

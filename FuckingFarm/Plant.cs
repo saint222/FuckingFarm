@@ -11,7 +11,6 @@ namespace FuckingFarm
         public string PlantName { get; set; }
         public string PlantSeasonOfPlanting { get; set; }
         public string PlantSeasonOfHarvesting { get; set; }
-        public double PlantSquareAtTheGardenbed { get; set; }
-        
+        public double PlantSquareAtTheGardenbed { get; set; }        
     }
 }
