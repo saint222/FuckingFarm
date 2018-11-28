@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace FuckingFarm
 {
-    public class Gardenbed
+    public enum Season
     {
-        public double GardenbedSquare { get; set; }
-        public List <Plant> Plants { get; set; }
-
-
-        
+        winter,
+        spring,
+        summer,
+        autumn
     }
 }

@@ -9,8 +9,16 @@ namespace FuckingFarm
    public class Plant
     {
         public string PlantName { get; set; }
-        public string PlantSeasonOfPlanting { get; set; }
-        public string PlantSeasonOfHarvesting { get; set; }
-        public double PlantSquareAtTheGardenbed { get; set; }        
+        public Season PlantSeasonOfPlanting { get; set; }
+        public Season PlantSeasonOfHarvesting { get; set; }
+        public double PlantSquareAtTheGardenbed { get; set; }
+
+
+        public void AddAPlant()
+        {
+            Plant bean = new Plant() { PlantName = "bean", PlantSeasonOfPlanting = Season.spring, PlantSeasonOfHarvesting = Season.autumn, PlantSquareAtTheGardenbed = 7 };
+        }
     }
+
+
 }

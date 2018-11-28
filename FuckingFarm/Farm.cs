@@ -80,6 +80,7 @@ namespace FuckingFarm
             Console.WriteLine($"The henhous percent of fullness is {animalsCount_1} %;");
         }
 
+
     }
     
 }
